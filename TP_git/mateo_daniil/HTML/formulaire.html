@@ -4,35 +4,47 @@
 		<meta charset="utf-8">
 		<title>Formulaire </title>
 		<link rel="stylesheet" href="../css/style.css">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../HTML/index.html">Chuck Norris</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../HTML/index.html">Home</a></li>
+					<li><a href="../HTML/formulaire.html">Formulaire</a></li>
+					<li><a href="../HTML/film.html">Film</a></li>
+					<li><a href="../HTML/facts.html">Facts</a></li>
+				</ul>
+			</div>
+		</nav>
 	</head>
 	<body>
-      <p><h1>Veuillez entrez vos informations</h1></p><br>
+      <p><h1>Remplissez le formulaire</h1></p><br>
 
-	   <!--Création de mon formulaire-->
-		<form  action="../HTML/biographie.html" method="GET" class="form-group" name="formSaisie">
+	   <!--Création form-->
+		<form  action="../HTML/biographie.html" method="GET" class="formulaire" name="formSaisie">
 			<table>
 				<tbody>
                 <tr>  <!--Username-->
-					<td>Nom d'utilisateur</td>
+					<td>Nom d'utilisateur :</td>
                     <td><input type="text" name="Username" id="Username" width="300px"></td>
                 </tr>
-				<tr>  <!--Le numero de telephone de la personne-->
-					<td>Téléphone</td>
+				<tr>  <!--Numero tel-->
+					<td>Téléphone :</td>
                     <td><input type="tel" name="tel" id="tel"></td>
                 </tr>
-				<tr>  <!--Le mail de la personne-->
-					<td>Email</td>
+				<tr>  <!--Mail-->
+					<td>Email :</td>
                     <td><input type="email" name="mail" id="mail"></td>
                 </tr>
-                <tr>  <!--Le genre de la personne-->
-					<td id="gender">Genre</td>
+                <tr>  <!--Genre-->
+					<td id="gender">Genre :</td>
                     <td id="idH"><input type="radio" class="custom-radio" name="genre">Homme</td>
                     <td id="idF"><input type="radio" class="custom-radio" name="genre" >Femme</td>
-					<td id="idA"><input type="radio" class="custom-radio" name="genre" >Autre</td>
+					<td id="idA"><input type="radio" class="custom-radio" name="genre" checked >Autre</td>
                 </tr>
 				</tbody>
 			</table>
- 			<!--Boutons permettant de renvoyer la personne ayant cliquer dessus sur une autre page; ou de reset le magnifique page-->
 			<input type="submit" class="btn-expand btn-primary" value="Valider">
 			<input type="reset" class="btn-expand" value="Effacer le formulaire">
 		</form>

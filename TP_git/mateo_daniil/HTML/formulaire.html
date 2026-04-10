@@ -4,22 +4,21 @@
 		<meta charset="utf-8">
 		<title>Formulaire </title>
 		<link rel="stylesheet" href="../css/style.css">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="../HTML/index.html">Chuck Norris</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="../HTML/index.html">Home</a></li>
-					<li><a href="../HTML/formulaire.html">Formulaire</a></li>
-					<li><a href="../HTML/film.html">Film</a></li>
-					<li><a href="../HTML/facts.html">Facts</a></li>
+		
+		<nav class="navbar">
+			<div class="navbar-container">
+				<a class="navbar-logo" href="../HTML/index.html">🥋 Chuck Norris</a>
+				<ul class="navbar-menu">
+					<li><a href="../HTML/index.html" class="navbar-link">Accueil</a></li>
+					<li><a href="../HTML/formulaire.html" class="navbar-link">Formulaire</a></li>
+					<li><a href="../HTML/film.html" class="navbar-link">Film</a></li>
+					<li><a href="../HTML/facts.html" class="navbar-link">Facts</a></li>
 				</ul>
 			</div>
 		</nav>
 	</head>
 	<body>
-      <p><h1>Remplissez le formulaire</h1></p><br>
+      <p><h1>Remplissez le formulaire afin d'acceder à la biographie</h1></p><br>
 
 	   <!--Création form-->
 		<form  action="../HTML/biographie.html" method="GET" class="formulaire" name="formSaisie">
@@ -49,6 +48,5 @@
 			<input type="reset" class="btn-expand" value="Effacer le formulaire">
 		</form>
         <img src="../IMG/norris_1.webp" id="Norris1" >
-        <p>Chuck Norris n'attend que vous... rejoinez-le !</p>
 	</body>
 </html>

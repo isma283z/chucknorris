@@ -2,6 +2,10 @@ input.bouton {
     text-align: right;
 }
 
+.body{
+    background-color:rgb(255, 158, 46);
+}
+
 .titre{
     text-align: center;
     color: black;
@@ -91,3 +95,4 @@ input.bouton {
     border-collapse: separate;
     border-spacing: 0px 10px;
 }
+
